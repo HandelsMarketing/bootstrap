@@ -6,23 +6,20 @@
 get_header();
 
 
-ACFListener::fields('test');
+/*
+ * 'flex_example' refer to the *ID* of the Flexible Content field.
+ * All layouts in the given field will have their init.php file included.
+ */
+
+ACFListener::fields('flex_example');
 
 
-
-
-while( have_rows('wrappers' )) {
-	the_row();
-	ACFListener::fields('test');
-}
 
 
 
 /*
 
 	TODO
-
-
 
 */
 get_footer(); ?>

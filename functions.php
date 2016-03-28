@@ -1,3 +1,3 @@
 <?php
 
-	require_once('inc/acf/ACFListener.php');
+	require_once('inc/acf/setup.php');
