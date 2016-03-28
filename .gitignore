@@ -80,6 +80,3 @@ $RECYCLE.BIN/
 
 # sftp configuration file
 sftp-config.json
-
-acf-json/*
-acf-layouts/*
