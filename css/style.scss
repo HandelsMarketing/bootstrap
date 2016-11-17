@@ -1,0 +1,63 @@
+/*!
+	Theme Name: Bootstrap
+*/
+
+
+@import 'bourbon/bourbon';
+@import '__reset';
+@import '__variables';
+@import '__menu';
+@import "__module-background";
+@import "__m-header";
+@import "__m-statement";
+@import "__m-calltoaction";
+@import "__m-entertainers";
+@import "__m-split.scss";
+@import "__m-tickets.scss";
+@import "__m-countdown.scss";
+@import "__post";
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: $color_dark;
+  color: $color_white--primary;
+  font-family: "Merriweather Sans", sans-serif;
+  line-height: 1.6;
+}
+
+
+a {
+  color: $color_red--primary;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 1.5em;
+  margin-bottom: .6em;
+}
+
+hr {
+  border-color: $color_dark--shaded;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+button {
+  @include linear-gradient(to bottom, $color_red--primary, $color_red--shaded);
+  padding: 6px 24px;
+  font-weight: bold;
+  border: 0;
+  color: $color_white--primary;
+  @include transition(background .2s, background-image .2s, background-color .2s);
+  &:hover {
+    @include linear-gradient(to bottom, $color-red--shaded, $color_red--shaded);
+  }
+}

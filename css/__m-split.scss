@@ -1,0 +1,48 @@
+.splitModule {
+  padding: 70px 0;
+}
+
+.splitModule-wrapper {
+  width: 90%;
+  max-width: $content__max-width;
+  margin: auto;
+}
+
+.splitModule-text {
+  text-align: center;
+}
+.splitModule-image {
+  text-align: center;
+  margin-top: 36px;
+  img {
+    max-width: 100%;
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+  .splitModule-image {
+    width: 30%;
+  }
+  .splitModule-text {
+    width: 60%;
+    text-align: left;
+  }
+  .splitModule--left {
+    .splitModule-text {
+      float:right;
+    }
+    .splitModule-image {
+      float: left;
+    }
+  }
+  .splitModule--right {
+    .splitModule-text {
+      float: left;
+    }
+    .splitModule-image {
+      float:right;
+    }
+  }
+}

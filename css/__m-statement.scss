@@ -1,0 +1,28 @@
+.statementModule {
+  padding: 70px 0;
+}
+
+.statementModule-wrapper {
+  width: 85%;
+  max-width: 750px;
+  margin: auto;
+}
+
+@media( min-width: 800px) {
+  .statementModule {
+    font-size: 1.2em;
+    padding: 90px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .statementModule {
+    font-size: 1.3em;
+    padding: 100px 0;
+  }
+}
+
+
+.statementModule.module--image {
+  text-shadow: 0px 0px 4px $color_dark--shaded;
+}
