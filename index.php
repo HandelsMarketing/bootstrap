@@ -11,7 +11,7 @@ get_header();
  * All layouts in the given field will have their init.php file included.
  */
 
-ACFListener::fields('modules');
+ACFListener::fields('flex_example');
 
 
 
